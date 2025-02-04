@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #668985;
+  --secondary-color: #5e5c54;
+  --tertiary-color: #dec45b;
+
+  --primary-font: "Krona One", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.header {
+  padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.header__menu__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
+
+.presentation {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.presentation__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.presentation__content__title {
+  font-size: 2.25rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.presentation__content__text {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.job-title {
+  color: var(--tertiary-color);
+}
+
+.project {
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+.presentation__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.presentation__links__subtitle {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+}
+
+.presentation__links__link {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 376px;
+  font-size: 1.5rem;
+  padding: 21.5px 0px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 3px solid var(--secondary-color);
+}
+
+.presentation__links__link:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.presentation__links__link__icons {
+  height: 30px;
+}
+
+.presentation__image {
+  width: 50%;
+}
+
+.footer {
+  padding: 23.5px;
+  background-color: #70636f;
+  text-align: center;
+  font-family: "Montserrat" sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--tertiary-color);
+}
+
+.hard-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.hard-skills__title {
+  font-size: 2.25rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.hard-skills img {
+  height: 80px;
+}
+
+.hard-skills span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 6%;
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .presentation {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .presentation__content {
+    width: auto;
+  }
+
+  .hard-skills {
+    flex-direction: column;
+  }
+}
